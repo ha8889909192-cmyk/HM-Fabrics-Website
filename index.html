@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HM Fabrics — Premium unstitched men's fabrics. Wash & Wear, Khaddar and seasonal collections.">
+  <title>HM Fabrics | Premium Men's Fabrics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <div class="announcement-track">
+      <span>🚚 FREE HOME DELIVERY ACROSS PAKISTAN</span>
+      <span>💵 CASH ON DELIVERY AVAILABLE</span>
+      <span>🎁 10% OFF ON YOUR FIRST ORDER</span>
+      <span>🔄 7 DAYS EASY RETURN & EXCHANGE</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <a class="brand" href="#home">
+        <span class="brand-mark">HM</span>
+        <span><b>HM</b> FABRICS<small>PREMIUM MEN'S FABRICS</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#wash">Wash & Wear</a>
+        <a href="#khaddar">Khaddar</a>
+        <a href="#new">New Arrivals</a>
+        <a href="#best">Best Sellers</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button title="Search" id="searchBtn">⌕</button>
+        <button title="Wishlist">♡</button>
+        <button title="Account">♙</button>
+        <button title="Cart" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+      </div>
+    </div>
+    <div class="search-panel" id="searchPanel">
+      <input id="searchInput" type="search" placeholder="Search fabrics, colors, collections...">
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <img src="assets/hero-banner.png" alt="HM Fabrics premium men's fabrics banner">
+      <div class="hero-fallback">
+        <div class="eyebrow">HM FABRICS</div>
+        <h1>Upgrade Your Style<br>with HM Fabrics</h1>
+        <p>Fabric That Defines Your Style.</p>
+        <a class="btn gold" href="#shop">SHOP NOW</a>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>✓</strong><span>Premium Quality<br><small>Selected fabrics</small></span></div>
+      <div><strong>🚚</strong><span>Free Delivery<br><small>Across Pakistan</small></span></div>
+      <div><strong>💵</strong><span>Cash on Delivery<br><small>Easy ordering</small></span></div>
+      <div><strong>↻</strong><span>7-Day Exchange<br><small>Customer friendly</small></span></div>
+    </section>
+
+    <section class="section collections">
+      <div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>Shop by Collection</h2></div></div>
+      <div class="collection-grid">
+        <a href="#wash" class="collection-card c1"><div><span>01</span><h3>Wash & Wear</h3><p>Smart • Comfortable • Premium</p></div></a>
+        <a href="#khaddar" class="collection-card c2"><div><span>02</span><h3>Khaddar</h3><p>Warm • Classic • Refined</p></div></a>
+        <a href="#new" class="collection-card c3"><div><span>03</span><h3>New Arrivals</h3><p>Fresh styles for you</p></div></a>
+        <a href="#best" class="collection-card c4"><div><span>04</span><h3>Best Sellers</h3><p>Customer favourites</p></div></a>
+      </div>
+    </section>
+
+    <section class="section product-section" id="wash">
+      <div class="section-head"><div><span class="eyebrow">SIGNATURE COLLECTION</span><h2>Wash & Wear</h2><p>Premium unstitched fabrics designed for comfort and everyday elegance.</p></div><a href="#shop" class="view-all">View All →</a></div>
+      <div class="product-grid" id="washGrid"></div>
+    </section>
+
+    <section class="section dark-section" id="khaddar">
+      <div class="section-head"><div><span class="eyebrow">WINTER ESSENTIALS</span><h2>Khaddar Collection</h2><p>Classic warmth with a refined men's fashion feel.</p></div><a href="#shop" class="view-all">View All →</a></div>
+      <div class="product-grid" id="khaddarGrid"></div>
+    </section>
+
+    <section class="season-banner">
+      <div><span class="eyebrow">SEASONAL EDIT</span><h2>Made for Every Season</h2><p>Explore fabrics selected for changing weather, occasions and personal style.</p><div><a href="#summer" class="btn outline">SUMMER COLLECTION</a><a href="#winter" class="btn gold">WINTER COLLECTION</a></div></div>
+    </section>
+
+    <section class="section" id="new">
+      <div class="section-head"><div><span class="eyebrow">JUST IN</span><h2>New Arrivals</h2></div><a href="#shop" class="view-all">View All →</a></div>
+      <div class="product-grid" id="newGrid"></div>
+    </section>
+
+    <section class="section" id="best">
+      <div class="section-head"><div><span class="eyebrow">CUSTOMER FAVOURITES</span><h2>Best Sellers</h2></div><a href="#shop" class="view-all">View All →</a></div>
+      <div class="product-grid" id="bestGrid"></div>
+    </section>
+
+    <section class="section trending">
+      <div class="section-head"><div><span class="eyebrow">POPULAR RIGHT NOW</span><h2>Trending Now</h2><p>Popular and limited-stock picks.</p></div></div>
+      <div class="trend-row">
+        <div><b>🔥 Trending</b><span>Premium Navy Wash & Wear</span></div>
+        <div><b>⭐ Best Seller</b><span>Classic Black Fabric</span></div>
+        <div><b>🟠 Only Few Left</b><span>Royal Blue Collection</span></div>
+      </div>
+    </section>
+
+    <section class="section reviews">
+      <div class="section-head center"><div><span class="eyebrow">REAL CUSTOMER REVIEWS</span><h2>What Customers Say</h2></div></div>
+      <div class="review-grid">
+        <article><div class="stars">★★★★★</div><p>“Excellent fabric quality and the color was exactly as shown. Very happy with my purchase.”</p><strong>Muhammad A.</strong><small>Verified Purchase</small></article>
+        <article><div class="stars">★★★★★</div><p>“Good quality, neat packing and quick delivery. I will order again.”</p><strong>Usman R.</strong><small>Verified Purchase</small></article>
+        <article><div class="stars">★★★★★</div><p>“The fabric feels premium and the price is reasonable. Highly recommended.”</p><strong>Ahmed K.</strong><small>Verified Purchase</small></article>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="section-head center"><div><span class="eyebrow">WHY HM FABRICS</span><h2>Quality You Can Trust</h2></div></div>
+      <div class="why-grid">
+        <div><span>⭐</span><h3>Premium Quality Fabrics</h3><p>Carefully selected fabrics for comfort, durability and style.</p></div>
+        <div><span>💰</span><h3>Affordable Prices</h3><p>Premium men's fabrics at reasonable prices.</p></div>
+        <div><span>🚚</span><h3>Free Delivery</h3><p>Free home delivery across Pakistan.</p></div>
+        <div><span>💵</span><h3>Cash on Delivery</h3><p>Order online and pay when your parcel arrives.</p></div>
+        <div><span>🔄</span><h3>7 Days Easy Exchange</h3><p>Customer-friendly exchange policy.</p></div>
+      </div>
+    </section>
+
+    <section class="whatsapp-cta">
+      <div><span class="eyebrow">NEED HELP?</span><h2>Not Sure Which Fabric to Choose?</h2><p>Talk to HM Fabrics support on WhatsApp or phone.</p></div>
+      <a class="btn whatsapp" href="https://wa.me/" target="_blank">💬 CHAT ON WHATSAPP</a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-copy"><span class="eyebrow">ABOUT HM FABRICS</span><h2>Fabric That Defines Your Style.</h2><p>HM Fabrics is a growing men's unstitched fabric brand focused on premium quality, fair pricing and a reliable online shopping experience. Our collections are selected with comfort, style and everyday wear in mind.</p><p>We aim to build long-term customer trust through quality fabrics, transparent service, free home delivery across Pakistan and responsive customer support.</p><a href="#contact" class="btn dark">CONTACT US</a></div>
+      <div class="about-card"><span>HM</span><b>FABRICS</b><small>PREMIUM MEN'S FABRICS</small></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-head"><div><span class="eyebrow">GET IN TOUCH</span><h2>Contact HM Fabrics</h2><p>We are here to help with products, orders and fabric selection.</p></div></div>
+      <div class="contact-grid">
+        <div class="contact-card"><span>💬</span><h3>WhatsApp</h3><p>Quick product and order support.</p><a href="https://wa.me/" target="_blank">Chat on WhatsApp →</a></div>
+        <div class="contact-card"><span>📞</span><h3>Phone Call</h3><p>Speak directly with our support team.</p><a href="tel:+92">Call HM Fabrics →</a></div>
+        <div class="contact-card"><span>📦</span><h3>Track Your Order</h3><p>Enter your Order ID and phone number.</p><a href="#track">Track Order →</a></div>
+      </div>
+    </section>
+
+    <section class="track section" id="track">
+      <div class="track-box"><span class="eyebrow">ORDER TRACKING</span><h2>Track Your Order</h2><p>Enter your Order ID and phone number to check your order status.</p><div class="track-form"><input placeholder="Enter Order ID"><input placeholder="Phone Number"><button class="btn gold" onclick="alert('Connect this form to WooCommerce order tracking when the site is installed.')">TRACK ORDER</button></div></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark">HM</span><span><b>HM</b> FABRICS<small>PREMIUM MEN'S FABRICS</small></span></a><p>Fabric That Defines Your Style.</p><div class="socials"><a href="#">f</a><a href="#">◎</a><a href="#">♪</a><a href="#">▶</a><a href="#">💬</a></div></div>
+      <div><h4>SHOP</h4><a href="#wash">Wash & Wear</a><a href="#khaddar">Khaddar</a><a href="#new">New Arrivals</a><a href="#best">Best Sellers</a><a href="#shop">Sale</a></div>
+      <div><h4>HELP</h4><a href="#about">About Us</a><a href="#contact">Contact Us</a><a href="#track">Track Order</a><a href="#">FAQ</a><a href="#">Shipping & Delivery</a></div>
+      <div><h4>POLICIES</h4><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a><a href="#">Return & Exchange</a><p class="footer-note">Free Home Delivery Across Pakistan<br>COD Available</p></div>
+    </div>
+    <div class="copyright">© 2026 HM Fabrics. All rights reserved.</div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/" target="_blank" aria-label="WhatsApp">💬</a>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
