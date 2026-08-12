@@ -414,10 +414,50 @@ function closeCart() {
 
       <h2>HM Fabrics Checkout</h2>
 
-      <p>
-        <strong>Cash on Delivery</strong>
-        available across Pakistan.
-      </p>
+      <div style="margin:15px 0;">
+
+  <h3>Payment Method</h3>
+
+  <select
+    id="paymentMethod"
+    onchange="updatePaymentMethod()"
+    style="
+      width:100%;
+      padding:13px;
+      margin:7px 0;
+      box-sizing:border-box;
+    "
+  >
+    <option value="COD">Cash on Delivery</option>
+    <option value="Easypaisa">Easypaisa</option>
+    <option value="JazzCash">JazzCash</option>
+    <option value="Bank Transfer">Bank Transfer</option>
+  </select>
+
+  <div
+    id="paymentInstructions"
+    style="
+      display:none;
+      background:#f7f7f7;
+      padding:15px;
+      margin-top:10px;
+      border-radius:8px;
+    "
+  ></div>
+
+  <input
+    id="transactionId"
+    placeholder="Transaction ID / Reference Number"
+    style="
+      display:none;
+      width:100%;
+      padding:13px;
+      margin:10px 0;
+      box-sizing:border-box;
+    "
+  >
+
+</div>
 
       <input
         id="customerName"
@@ -1269,3 +1309,75 @@ document.addEventListener(
 
   }
 );
+function updatePaymentMethod() {
+
+  const method =
+    document.getElementById("paymentMethod").value;
+
+  const instructions =
+    document.getElementById("paymentInstructions");
+
+  const transaction =
+    document.getElementById("transactionId");
+
+  if (method === "COD") {
+
+    instructions.style.display = "none";
+    transaction.style.display = "none";
+    transaction.value = "";
+
+    return;
+  }
+
+  instructions.style.display = "block";
+  transaction.style.display = "block";
+
+  if (method === "Easypaisa") {
+
+    instructions.innerHTML = `
+      <strong>Easypaisa Payment</strong>
+      <br><br>
+      Easypaisa Number:
+      <strong>YOUR EASYPaisa NUMBER</strong>
+      <br>
+      Account Name:
+      <strong>HM Fabrics</strong>
+      <br><br>
+      Payment send karne ke baad
+      Transaction ID neeche enter karein.
+    `;
+
+  } else if (method === "JazzCash") {
+
+    instructions.innerHTML = `
+      <strong>JazzCash Payment</strong>
+      <br><br>
+      JazzCash Number:
+      <strong>YOUR JAZZCASH NUMBER</strong>
+      <br>
+      Account Name:
+      <strong>HM Fabrics</strong>
+      <br><br>
+      Payment send karne ke baad
+      Transaction ID neeche enter karein.
+    `;
+
+  } else if (method === "Bank Transfer") {
+
+    instructions.innerHTML = `
+      <strong>Bank Transfer</strong>
+      <br><br>
+      Bank Name:
+      <strong>YOUR BANK NAME</strong>
+      <br>
+      Account Title:
+      <strong>HM Fabrics</strong>
+      <br>
+      Account Number / IBAN:
+      <strong>YOUR ACCOUNT NUMBER</strong>
+      <br><br>
+      Payment send karne ke baad
+      Transaction ID neeche enter karein.
+    `;
+  }
+}
