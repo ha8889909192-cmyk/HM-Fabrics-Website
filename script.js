@@ -10,7 +10,7 @@ const products = [
 ];
 
 const GOOGLE_SHEET_API =
-  "https://script.google.com/macros/s/AKfycbzXEo5rwVoVTSky5Z7waUoMwAGFQ1u3F_4G0ekCbXGvFY_jFuPcX9tMCQdimC8bld2HMw/exec";
+  "https://script.google.com/macros/s/AKfycbzSeFCzVAaDMHfKL7Qjg8SiCYpo9FLvuUiESbm52xSUSCc21hCBK18VAy6X2h53NkYIoQ/exec";
 
 let cart = JSON.parse(localStorage.getItem("hmFabricsCart") || "[]");
 
