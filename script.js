@@ -139,6 +139,7 @@ function addCart(index) {
   updateCartCount();
 
   alert(product.name + " cart mein add ho gaya!");
+  openCart();
 }
 
 function buyNow(index) {
@@ -155,6 +156,7 @@ function buyNow(index) {
   saveCart();
   updateCartCount();
 
+ openCart();
   checkout();
 }
 
